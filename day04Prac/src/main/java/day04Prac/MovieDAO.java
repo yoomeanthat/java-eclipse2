@@ -20,7 +20,7 @@ public class MovieDAO {
 		Connection  dbCon() {			
 			
 			Connection con = null;
-		
+			
 			try {
 				
 				//1.

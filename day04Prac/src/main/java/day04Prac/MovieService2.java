@@ -13,7 +13,7 @@ public class MovieService2 {
 	
 	
 	public ArrayList<Movie> getMovieList(){
-				
+		
 		//데이터베이스 연동
 		ArrayList<Movie> list = dao.selectAll();
 		

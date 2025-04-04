@@ -17,6 +17,7 @@ public class AcornDAO {
 	String password="tiger";
 	
 	
+	
 	public Connection dbcon() {		
 		Connection con=null;
 		try {
@@ -82,7 +83,7 @@ public class AcornDAO {
 			
 			pst.setString(1,  newAcorn.getId());
 			pst.setString(2,  newAcorn.getPw());
-			pst.setString(3,  newAcorn.getName());			
+			pst.setString(3,  newAcorn.getName());
 			pst.executeUpdate();
 			
 		} catch (SQLException e) {
@@ -110,7 +111,7 @@ public class AcornDAO {
 		Acorn acorn = null;
 		try {
 			 pst=con.prepareStatement(sql);
-			pst.setString(1, id);			
+			 pst.setString(1, id);			
 			 rs = pst.executeQuery();			
 			
 			if( rs.next()) {
@@ -183,7 +184,7 @@ public class AcornDAO {
 		//Acorn acorn = new Acorn("zzz","0000","고길동");
 		//dao.insertMember(acorn);		
 		Acorn a = dao.selectOne("sj");
-		System.out.println( a);		
+		System.out.println( a);
 		//dao.update("sj", "4545");
 	 
 	}

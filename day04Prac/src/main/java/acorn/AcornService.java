@@ -16,12 +16,14 @@ public class AcornService {
 	}
 	
 	
+	
 	//
 	public ArrayList<Acorn> getMemberList(){
 		
 		ArrayList<Acorn>  list= dao.selectAll();
 		return list;
 	}
+	
 	
 	
 	//

@@ -26,6 +26,7 @@ public class AcornRegServlet extends HttpServlet{
 		//
 		req.getRequestDispatcher("WEB-INF/views/joinForm.jsp").forward(req, resp);
 		
+		
 	}
 	
 	@Override

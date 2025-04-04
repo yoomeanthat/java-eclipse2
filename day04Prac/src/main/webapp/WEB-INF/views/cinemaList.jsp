@@ -29,6 +29,6 @@
 </tr>
 <% } %>
 </table>
-
+<a href="/day04Prac/regCinema"><button>영화관 등록하기</button></a>
 </body>
 </html>
