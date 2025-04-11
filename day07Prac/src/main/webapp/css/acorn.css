@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* 에이콘 옷장 메인 스타일 시트 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e74c3c;
+}
+
+.user-greeting {
+    background-color: #e8f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: #3498db;
+    font-weight: 500;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 특별한 링크 스타일 */
+a[href*="login"], a[href*="logout"] {
+    background-color: #e74c3c;
+}
+
+a[href*="login"]:hover, a[href*="logout"]:hover {
+    background-color: #c0392b;
+}
+
+a[href*="closet"] {
+    background-color: #2ecc71;
+    font-weight: 700;
+}
+
+a[href*="closet"]:hover {
+    background-color: #27ae60;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    a {
+        width: 80%;
+        text-align: center;
+    }
+}
